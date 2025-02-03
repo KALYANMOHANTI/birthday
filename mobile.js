@@ -1,5 +1,28 @@
 let highestZ = 1;
 
+const heartImage = ""; // Replace with actual heart PNG/SVG
+
+function heartRain() {
+    setInterval(() => {
+        confetti({
+            particleCount: 3,
+            startVelocity: 3,
+            spread: 20,
+           
+            scalar: 1.8,
+            shapes: ["image"], // Use heart image
+            shapeOptions: {
+                image: {
+                    src: heartImage,
+                },
+            },
+            origin: { x: Math.random(), y: 0 },
+        });
+    }, 300);
+}
+
+heartRain();
+
 class Paper {
   holdingPaper = false;
   touchStartX = 0;
