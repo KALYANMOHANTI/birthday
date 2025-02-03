@@ -2,7 +2,12 @@ body{
     background-image:url(images\asang\overhead-view-red-rose-smartphone-pink-background.jpg);
     background-position:center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
    
+}
+pre{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    
 }
