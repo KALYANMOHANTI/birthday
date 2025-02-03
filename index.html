@@ -99,6 +99,21 @@
    <audio controls autoplay  loop>
         <source src=" songs\WhatsApp Audio 2025-02-03 at 23.12.00_de7cf19e.mp3" type ="audio/mp3">
     </audio>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const audio = document.querySelector("audio");
+
+    // Try to play the audio automatically
+    audio.play().catch(function (error) {
+        console.log("Autoplay prevented. Waiting for user interaction.");
+
+        // Play when the user interacts with the page
+        document.addEventListener("click", function () {
+            audio.play();
+        }, { once: true });
+    });
+});
+  </script>
 <!-- partial -->
 <script  src="./mobile.js"></script>
  
